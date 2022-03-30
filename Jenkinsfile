@@ -5,7 +5,7 @@ pipeline {
         AWS_DEFAULT_REGION="ap-south-1" 
 	CLUSTER_NAME="default"
 	SERVICE_NAME="demo-container-service"
-	TASK_DEFINITION_NAME="first-run-task-definition"
+	TASK_DEFINITION_NAME="demo-taskdef"
 	DESIRED_COUNT="2"
         IMAGE_REPO_NAME="774700302012.dkr.ecr.ap-south-1.amazonaws.com/newrepo"
         IMAGE_TAG="${env.BUILD_ID}"
