@@ -3,10 +3,10 @@ pipeline {
     environment {
         AWS_ACCOUNT_ID="774700302012"
         AWS_DEFAULT_REGION="ap-south-1" 
-	CLUSTER_NAME="default"
+	CLUSTER_NAME="demo-ecs"
 	SERVICE_NAME="demo-container-service"
-	TASK_DEFINITION_NAME="demo-taskdef"
-	DESIRED_COUNT="2"
+	TASK_DEFINITION_NAME="first-run-task-definition"
+	DESIRED_COUNT="1"
         IMAGE_REPO_NAME="774700302012.dkr.ecr.ap-south-1.amazonaws.com/newrepo"
         IMAGE_TAG="${env.BUILD_ID}"
         REPOSITORY_URI = "${AWS_ACCOUNT_ID}.dkr.ecr.${AWS_DEFAULT_REGION}.amazonaws.com/${IMAGE_REPO_NAME}"
