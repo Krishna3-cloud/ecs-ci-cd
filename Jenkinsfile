@@ -7,7 +7,7 @@ pipeline {
 	SERVICE_NAME="demo-container-service"
 	TASK_DEFINITION_NAME="first-run-task-definition"
 	DESIRED_COUNT="2"
-        IMAGE_REPO_NAME="774700302012.dkr.ecr.ap-south-1.amazonaws.com/ecs-ci/cd"
+        IMAGE_REPO_NAME="774700302012.dkr.ecr.ap-south-1.amazonaws.com/newrepo"
         IMAGE_TAG="${env.BUILD_ID}"
         REPOSITORY_URI = "${AWS_ACCOUNT_ID}.dkr.ecr.${AWS_DEFAULT_REGION}.amazonaws.com/${IMAGE_REPO_NAME}"
 	registryCredential = "demo-admin-user"
